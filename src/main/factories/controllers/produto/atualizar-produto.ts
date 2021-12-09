@@ -1,5 +1,4 @@
 import { AtualizarProdutoService } from "../../../../data/services/produto/atualizar-produto"
-import { CriarProdutoService } from "../../../../data/services/produto/criar-produto"
 import { AMQPClientAdapter } from "../../../../infra/amqp-client"
 import { Controller } from "../../../../presentation/contracts/controller"
 import { AtualizarProdutoController } from "../../../../presentation/controllers/produto/atualizar-produto"
