@@ -49,7 +49,7 @@ export class AMQPClientAdapter implements AMQPClient {
 
                     setTimeout(() => {
                         connection.close()
-                        reject('Timeout')
+                        resolve('Timeout')
                     }, 500)
                 });
             });
