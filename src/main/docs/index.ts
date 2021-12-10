@@ -15,7 +15,7 @@ export default {
     description: 'APIs de Produto',
   },
   {
-    name: 'Estiqye',
+    name: 'Estoque',
     description: 'APIs de Estoque',
   }],
   paths,
