@@ -4,7 +4,7 @@ import { ValidatorComposite } from "../../../../validation/validators/validator-
 
 export const makeAtualizarProdutoValidator = (): ValidatorComposite => {
     const validations: Validator[] = []
-    const requiredFields = ['id', 'nome', 'preco', 'idCategoria']
+    const requiredFields = ['id', 'nome', 'idCategoria']
     for (const field of requiredFields) {
       validations.push(new RequiredFieldValidator(field))
     }
