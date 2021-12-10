@@ -5,7 +5,7 @@ export class DeletarProdutoService implements DeletarProdutoUseCase {
     constructor (private readonly amqpClient: AMQPClient) {}
     async deletar(id: number): Promise<void | Error> {
         const response = await this.amqpClient.send('deletar-produto', { id })
-        if (response['error']) {
+        if (response && response['error']) {
             return new Error(response['error'])
         }
     }

@@ -7,7 +7,7 @@ export class CriarProdutoService implements CriarProdutoUseCase {
     constructor (private readonly amqpClient: AMQPClient) {}
     async criar(data: CriarProdutoModel): Promise<ProdutoModel| Error> {
         const produto = await this.amqpClient.send('criar-produto', data)
-        if (produto['error']) {
+        if (produto && produto['error']) {
             return new Error(produto['error'])
         }
         return produto

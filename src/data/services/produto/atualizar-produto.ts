@@ -6,7 +6,7 @@ export class AtualizarProdutoService implements AtualizarProdutoUseCase {
     constructor (private readonly amqpClient: AMQPClient) {}
     async atualizar(data: AtualizarProdutoModel): Promise<void | Error> {
         const response = await this.amqpClient.send('atualizar-produto', data)
-        if (response['error']) {
+        if (response && response['error']) {
             return new Error(response['error'])
         }
     }

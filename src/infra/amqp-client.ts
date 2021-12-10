@@ -30,7 +30,12 @@ export class AMQPClientAdapter implements AMQPClient {
 
                     channel.consume(q.queue, function (msg) {
                         if (msg.properties.correlationId == correlationId) {
-                            resolve(msg.content ? JSON.parse(msg.content.toString()) : null)
+                            try {
+                                const result = msg.content ? JSON.parse(msg.content.toString()) : null
+                                resolve(result)
+                            } catch (error) {
+                                resolve(null)
+                            }
                         }
                     }, {
                         noAck: true
