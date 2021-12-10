@@ -17,6 +17,10 @@ export default {
   {
     name: 'Estoque',
     description: 'APIs de Estoque',
+  },
+  {
+    name: 'Categoria',
+    description: 'APIs de Categoria',
   }],
   paths,
   schemas

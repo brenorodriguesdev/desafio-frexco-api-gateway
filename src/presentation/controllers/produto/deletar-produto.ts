@@ -18,6 +18,7 @@ export class DeletarProdutoController implements Controller {
             }
             return noContent()
         } catch (error) {
+            console.log(error.message)
             return serverError()
         }
     }
