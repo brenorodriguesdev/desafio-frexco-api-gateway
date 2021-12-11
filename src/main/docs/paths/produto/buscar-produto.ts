@@ -1,19 +1,19 @@
-export const deletarEstoquePath = {
+export const buscarProdutoPath = {
     delete: {
-        tags: ['Estoque'],
-        summary: 'API para deletar um estoque',
+        tags: ['Produto'],
+        summary: 'API para buscar um produto',
         parameters: [{
             in: 'path',
             name: 'id',
-            description: 'ID do estoque',
+            description: 'ID do produto',
             required: true,
             schema: {
                 type: 'integer'
             }
         }],
         responses: {
-            204: {
-                description: 'Estoque deletado'
+            200: {
+                description: 'Produto retornado'
             }
         }
     }

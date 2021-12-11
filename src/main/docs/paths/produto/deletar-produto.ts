@@ -12,7 +12,7 @@ export const deletarProdutoPath = {
             }
         }],
         responses: {
-            200: {
+            204: {
                 description: 'Produto deletado'
             }
         }
