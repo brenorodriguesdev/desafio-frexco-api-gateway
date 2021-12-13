@@ -1,5 +1,5 @@
 export const buscarProdutoPath = {
-    delete: {
+    get: {
         tags: ['Produto'],
         summary: 'API para buscar um produto',
         parameters: [{
