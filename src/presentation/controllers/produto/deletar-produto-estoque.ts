@@ -13,7 +13,7 @@ export class DeletarProdutoEstoqueController implements Controller {
                 return badRequest(error)
             }
 
-            const { idProduto, idEstoque } = httpRequest.params.id
+            const { idProduto, idEstoque } = httpRequest.params
 
             const result = await this.deletarProdutoEstoqueUseCase.deletar({
                 idProduto,
