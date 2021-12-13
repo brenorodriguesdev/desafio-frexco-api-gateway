@@ -8,7 +8,9 @@ import {
     deletarEstoquePath,
     listarEstoquesPath,
     listarCategoriasPath,
-    buscarProdutoPath
+    buscarProdutoPath,
+    adicionarProdutoEstoquePath,
+    deletarProdutoEstoquePath
 } from "./paths/";
 
 export default {
@@ -22,4 +24,6 @@ export default {
     '/deletarEstoque/{id}': deletarEstoquePath,
     '/listarEstoques': listarEstoquesPath,
     '/listarCategorias': listarCategoriasPath,
+    '/adicionarProdutoEstoque': adicionarProdutoEstoquePath,
+    '/deletarProdutoEstoque/{idProduto}/{idEstoque}': deletarProdutoEstoquePath,
 }

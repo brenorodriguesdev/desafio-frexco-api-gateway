@@ -2,7 +2,8 @@ import {
     atualizarProdutoParamsSchema,
     criarProdutoParamsSchema,
     atualizarEstoqueParamsSchema,
-    criarEstoqueParamsSchema
+    criarEstoqueParamsSchema,
+    adicionarProdutoEstoqueParamsSchema
 } from "./schemas/";
 
 export default {
@@ -10,4 +11,5 @@ export default {
     criarProdutoParams: criarProdutoParamsSchema,
     atualizarEstoqueParams: atualizarEstoqueParamsSchema,
     criarEstoqueParams: criarEstoqueParamsSchema,
+    adicionarProdutoEstoqueParams: adicionarProdutoEstoqueParamsSchema
 }

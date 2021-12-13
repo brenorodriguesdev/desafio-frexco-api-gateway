@@ -1,4 +1,4 @@
-import { AdicionarProdutoEstoqueModel } from "../../../domain/models/produto/adicionar-produto-estoque";
+import { AdicionarProdutoEstoqueModel } from "../../../domain/models/estoque/adicionar-produto-estoque";
 import { DeletarProdutoEstoqueUseCase } from "../../../domain/useCases/estoque/deletar-produto-estoque";
 import { AMQPClient } from "../../contracts/amqp-client";
 
